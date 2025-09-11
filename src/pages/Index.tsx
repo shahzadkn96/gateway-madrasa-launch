@@ -1,13 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import FeaturesSection from "@/components/FeaturesSection";
+import CallToAction from "@/components/CallToAction";
+import { useEffect } from "react";
 
 const Index = () => {
+  useEffect(() => {
+    // Update page title and meta description for SEO
+    document.title = "Gateway Education - Online Islamic Madrasa | Quran & Islamic Studies Classes";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Join Gateway Education\'s online Islamic Madrasa. 1-to-1 personalized sessions, group classes, flexible timings & affordable fees. Free trial class available. Register now!');
+    }
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <HeroSection />
+      <FeaturesSection />
+      <CallToAction />
+    </main>
   );
 };
 
