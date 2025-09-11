@@ -1,38 +1,41 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, BookOpen, Clock, GraduationCap, Heart, CheckCircle } from "lucide-react";
+import { Users, BookOpen, Clock, GraduationCap, CheckCircle } from "lucide-react";
 import educationIllustration from "@/assets/education-illustration.jpg";
 
 const FeaturesSection = () => {
-  const features = [
+  const services = [
     {
-      icon: Users,
-      title: "1-to-1 Personalized Sessions",
-      description: "Individual attention with qualified Islamic scholars tailored to your learning pace and needs."
+      title: "Islamic Madrasa",
+      description: "Comprehensive Islamic studies with qualified scholars",
+      features: ["Quran Recitation & Memorization", "Islamic History & Jurisprudence", "Arabic Language", "Islamic Ethics & Values"]
     },
     {
-      icon: BookOpen,
-      title: "Group Batch Classes",
-      description: "Learn alongside peers in structured group sessions that encourage discussion and community."
+      title: "School Tuition (Classes 1-7)",
+      description: "Expert guidance across all major school subjects",
+      features: ["📖 English", "🔢 Math", "🔬 Science", "🌍 Social Studies", "✍️ Languages & more"]
+    }
+  ];
+
+  const benefits = [
+    {
+      icon: Users,
+      title: "Personalized Guidance",
+      description: "Every child learns at their own pace with individual attention and customized learning plans."
     },
     {
       icon: Clock,
-      title: "Flexible Timings",
-      description: "Choose from morning, evening, or weekend slots that fit your busy schedule."
+      title: "Flexible Timing",
+      description: "Learning that fits into your schedule - choose from morning, evening, or weekend slots."
+    },
+    {
+      icon: BookOpen,
+      title: "Interactive Learning", 
+      description: "Engaging sessions with multimedia content to make concepts crystal clear and memorable."
     },
     {
       icon: GraduationCap,
-      title: "Structured Syllabus",
-      description: "Comprehensive curriculum designed for all ages, from beginners to advanced learners."
-    },
-    {
-      icon: Heart,
-      title: "Affordable Fees",
-      description: "Quality Islamic education at prices that make learning accessible to everyone."
-    },
-    {
-      icon: CheckCircle,
-      title: "All Ages Welcome",
-      description: "From children to adults, our programs are designed to accommodate every age group."
+      title: "Expert Teachers",
+      description: "Qualified educators with years of experience in both Islamic studies and school curriculum."
     }
   ];
 
@@ -41,36 +44,58 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Why Choose Gateway Education?
+            Comprehensive Online Education
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We combine traditional Islamic teaching methods with modern technology to provide 
-            an exceptional learning experience for students worldwide.
+            Gateway Education offers both Islamic studies and school tuition, combining traditional 
+            teaching methods with modern technology for an exceptional learning experience.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          <div className="grid md:grid-cols-2 gap-6">
-            {features.map((feature, index) => (
-              <Card key={index} className="border-sage-green/30 shadow-sm hover:shadow-elegant transition-all duration-300 hover:scale-[1.02]">
+        {/* Services Section */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          {services.map((service, index) => (
+            <Card key={index} className="border-primary/20 shadow-elegant hover:shadow-glow transition-all duration-300">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold text-primary mb-4">{service.title}</h3>
+                <p className="text-muted-foreground mb-6">{service.description}</p>
+                <div className="space-y-2">
+                  {service.features.map((feature, featureIndex) => (
+                    <div key={featureIndex} className="flex items-center text-sm">
+                      <CheckCircle className="w-4 h-4 text-islamic-gold mr-2 flex-shrink-0" />
+                      <span>{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Benefits Section */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold text-primary text-center mb-12">What Makes Us Different?</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {benefits.map((benefit, index) => (
+              <Card key={index} className="border-sage-green/30 shadow-sm hover:shadow-elegant transition-all duration-300 hover:scale-[1.02] text-center">
                 <CardContent className="p-6">
-                  <feature.icon className="w-10 h-10 text-islamic-gold mb-4" />
-                  <h3 className="font-semibold text-primary mb-2">{feature.title}</h3>
-                  <p className="text-muted-foreground text-sm">{feature.description}</p>
+                  <benefit.icon className="w-12 h-12 text-islamic-gold mx-auto mb-4" />
+                  <h4 className="font-semibold text-primary mb-2">{benefit.title}</h4>
+                  <p className="text-muted-foreground text-sm">{benefit.description}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
-          
-          <div className="order-first lg:order-last">
-            <div className="relative">
-              <img 
-                src={educationIllustration} 
-                alt="Islamic education online learning"
-                className="rounded-2xl shadow-elegant w-full"
-              />
-              <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl"></div>
-            </div>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="relative">
+            <img 
+              src={educationIllustration} 
+              alt="Islamic education online learning"
+              className="rounded-2xl shadow-elegant w-full"
+            />
+            <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl"></div>
           </div>
         </div>
 

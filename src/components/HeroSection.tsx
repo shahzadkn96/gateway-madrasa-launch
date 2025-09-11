@@ -39,22 +39,23 @@ const HeroSection = () => {
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 font-medium">
-            Online Islamic Madrasa
+            Islamic Madrasa & School Tuition Online
           </p>
           
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">
-            Now open for registrations! Join thousands of students learning Islamic studies with personalized attention and flexible scheduling.
+            Comprehensive online education for Islamic studies and school subjects (Classes 1-7). 
+            Expert guidance across all major subjects with personalized attention.
           </p>
           
           {/* Key Features */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-10 max-w-4xl mx-auto">
             <div className="flex flex-col items-center bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4 border border-primary-foreground/20">
-              <Users className="w-8 h-8 text-islamic-gold mb-2" />
-              <span className="text-primary-foreground font-medium text-sm md:text-base">1-to-1 Sessions</span>
+              <BookOpen className="w-8 h-8 text-islamic-gold mb-2" />
+              <span className="text-primary-foreground font-medium text-sm md:text-base">Islamic Studies</span>
             </div>
             <div className="flex flex-col items-center bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4 border border-primary-foreground/20">
-              <BookOpen className="w-8 h-8 text-islamic-gold mb-2" />
-              <span className="text-primary-foreground font-medium text-sm md:text-base">Group Classes</span>
+              <Users className="w-8 h-8 text-islamic-gold mb-2" />
+              <span className="text-primary-foreground font-medium text-sm md:text-base">School Tuition</span>
             </div>
             <div className="flex flex-col items-center bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4 border border-primary-foreground/20">
               <Clock className="w-8 h-8 text-islamic-gold mb-2" />
@@ -62,7 +63,7 @@ const HeroSection = () => {
             </div>
             <div className="flex flex-col items-center bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4 border border-primary-foreground/20">
               <Star className="w-8 h-8 text-islamic-gold mb-2" />
-              <span className="text-primary-foreground font-medium text-sm md:text-base">All Ages Welcome</span>
+              <span className="text-primary-foreground font-medium text-sm md:text-base">Classes 1-7</span>
             </div>
           </div>
           

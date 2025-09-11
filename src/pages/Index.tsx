@@ -6,11 +6,11 @@ import { useEffect } from "react";
 const Index = () => {
   useEffect(() => {
     // Update page title and meta description for SEO
-    document.title = "Gateway Education - Online Islamic Madrasa | Quran & Islamic Studies Classes";
+    document.title = "Gateway Education - Islamic Madrasa & School Tuition Online | Classes 1-7";
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Join Gateway Education\'s online Islamic Madrasa. 1-to-1 personalized sessions, group classes, flexible timings & affordable fees. Free trial class available. Register now!');
+      metaDescription.setAttribute('content', 'Gateway Education offers online Islamic Madrasa and school tuition for Classes 1-7. Expert guidance in English, Math, Science, Social Studies & more. Free trial available!');
     }
   }, []);
 

@@ -19,10 +19,11 @@ const CallToAction = () => {
           {/* Main CTA */}
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-              Ready to Begin Your Islamic Learning Journey?
+              Start Strong This Academic Year!
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Join our growing community of students and start your free trial class today!
+              Join our growing community of students for Islamic studies and school tuition. 
+              Expert support in every subject with your free trial class!
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -49,7 +50,7 @@ const CallToAction = () => {
                 <Gift className="w-12 h-12 text-islamic-gold mx-auto mb-4" />
                 <h3 className="font-semibold text-primary-foreground mb-2">Free Trial Class</h3>
                 <p className="text-primary-foreground/80 text-sm">
-                  Experience our teaching methodology with no commitment required
+                  Experience our teaching for both Islamic studies and school subjects
                 </p>
               </CardContent>
             </Card>
@@ -82,7 +83,7 @@ const CallToAction = () => {
             </h3>
             <p className="text-primary-foreground/90">
               New batches are starting soon with limited seats. Register today to secure your spot 
-              and begin your journey towards Islamic knowledge.
+              for Islamic studies and school tuition support across all major subjects.
             </p>
           </div>
         </div>
