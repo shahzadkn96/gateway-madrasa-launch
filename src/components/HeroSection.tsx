@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Star, Users, Clock, BookOpen } from "lucide-react";
 import heroPattern from "@/assets/hero-pattern.jpg";
+import gatewayLogo from "@/assets/gateway-education-logo.png";
 
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
@@ -26,6 +27,15 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container mx-auto px-6 relative z-20 text-center">
         <div className="max-w-4xl mx-auto">
+          {/* Logo */}
+          <div className="flex justify-center mb-6">
+            <img 
+              src={gatewayLogo} 
+              alt="Gateway Education Logo" 
+              className="h-20 w-auto drop-shadow-lg"
+            />
+          </div>
+          
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-warm-cream/20 backdrop-blur-sm px-4 py-2 rounded-full border border-warm-cream/30 mb-8">
             <Star className="w-4 h-4 text-islamic-gold" fill="currentColor" />
