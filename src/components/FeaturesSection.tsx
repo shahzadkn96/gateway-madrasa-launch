@@ -7,7 +7,7 @@ const FeaturesSection = () => {
     {
       title: "Islamic Madrasa",
       description: "Comprehensive Islamic studies with qualified scholars",
-      features: ["Quran Recitation & Memorization", "Islamic History & Jurisprudence", "Arabic Language", "Islamic Ethics & Values"]
+      features: ["Quran Recitation & Tajweed", "Fiqh (Islamic Jurisprudence)", "Aqeedah (Islamic Beliefs)", "Seerah (Life of the Prophet ﷺ)", "Hadith Studies", "Islamic History", "Arabic Language Basics"]
     },
     {
       title: "School Tuition (Classes 1-7)",
@@ -102,11 +102,11 @@ const FeaturesSection = () => {
         {/* Stats Section */}
         <div className="grid md:grid-cols-4 gap-8 text-center">
           <div className="bg-primary/5 rounded-xl p-6">
-            <div className="text-3xl font-bold text-primary mb-2">500+</div>
+            <div className="text-3xl font-bold text-primary mb-2">30+</div>
             <div className="text-muted-foreground">Students Enrolled</div>
           </div>
           <div className="bg-primary/5 rounded-xl p-6">
-            <div className="text-3xl font-bold text-primary mb-2">50+</div>
+            <div className="text-3xl font-bold text-primary mb-2">5+</div>
             <div className="text-muted-foreground">Qualified Teachers</div>
           </div>
           <div className="bg-primary/5 rounded-xl p-6">
