@@ -88,17 +88,6 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          <div className="relative">
-            <img 
-              src={educationIllustration} 
-              alt="Islamic education online learning"
-              className="rounded-2xl shadow-elegant w-full"
-            />
-            <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl"></div>
-          </div>
-        </div>
-
         {/* Stats Section */}
         <div className="grid md:grid-cols-4 gap-8 text-center">
           <div className="bg-primary/5 rounded-xl p-6">

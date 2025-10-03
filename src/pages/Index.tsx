@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import CallToAction from "@/components/CallToAction";
+import WhatsAppChatbot from "@/components/WhatsAppChatbot";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
       <HeroSection />
       <FeaturesSection />
       <CallToAction />
+      <WhatsAppChatbot />
     </main>
   );
 };
